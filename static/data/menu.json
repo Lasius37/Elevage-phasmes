@@ -1,0 +1,28 @@
+[
+    {
+        "title": null,
+        "links": [
+            { "text": "Accueil", "href": "index" }
+        ]
+    },
+    {
+        "title": "Biologie",
+        "links": [
+            { "text": "Morphologie et anatomie", "href": "morpho-anat" },
+            { "text": "Classification", "href": "classif" },
+            { "text": "Habitat naturel", "href": "habitat" },
+            { "text": "Alimentation", "href": "feeding" },
+            { "text": "Reproduction et cycle de vie", "href": "reproduction" }
+        ]
+    },
+    {
+        "title": "Élevage",
+        "links": [
+            { "text": "Construire un vivarium", "href": "vivarium" },
+            { "text": "Obtenir des phasmes", "href": "get" },
+            { "text": "Se procurer le matériel d'élevage", "href": "tools" },
+            { "text": "Entretenir l'élevage", "href": "daily-care" },
+            { "text": "Contrôler la population", "href": "overpopulation" }
+        ]
+    }
+]

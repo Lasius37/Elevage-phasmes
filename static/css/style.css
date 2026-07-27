@@ -1,0 +1,89 @@
+/* -------------------------------------------- IMPORTS --------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* -------------------------------------------- INIT --------------------------------------------*/
+:root {
+    --white: #eef3e8;
+    --black: #2b2b2b;
+    --darkgreen: #3d522f;
+    --medgreen: #4f6b3c;
+    --lightgreen: #c8d2bf;
+
+    --textfont: "Nunito";
+    --titlefont: "Atkinson Hyperlegible";
+    --secondaryfont: "IBM Plex Sans";
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+html, body, header, h1, h2, h3, h4, h5, h6, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--titlefont);
+}
+
+ul, li {
+    list-style: none;
+}
+
+p, ul, li, a {
+    font-family: var(--textfont);
+}
+
+.latin {
+    font-style: italic;
+}
+
+/* -------------------------------------------- HEADER AND MENU --------------------------------------------*/
+header {
+    background-color: var(--darkgreen);
+    color: var(--white);
+}
+
+header .menu {
+    padding: 5px 8px;
+}
+
+header .main-menu {
+    border: 1px solid blue;
+}
+
+header .sub-menu {
+    border: 1px solid red;
+}
+
+header li.sub-menu {
+}
+
+header a {
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    height: 100%;
+    padding: 5px 8px;
+}
+
+header a:hover {
+    color: var(--white);
+    background-color: var(--medgreen);
+}
+
+header a:active {
+    color: var(--darkgreen);
+    background-color: var(--lightgreen);
+}
+
+
+/* -------------------------------------------- MEDIA --------------------------------------------*/
+img, video, audio {
+    font-family: var(--secondaryfont);
+    border-radius: 10px;
+    border: 2px solid var(--medgreen);
+    margin: 5px;
+}
