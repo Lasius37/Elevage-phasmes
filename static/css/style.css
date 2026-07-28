@@ -5,12 +5,12 @@
 :root {
     --white: #eef3e8;
     --black: #2b2b2b;
-    --darkgreen: #3d522f;
+    --darkgreen: #25351d;
     --medgreen: #4f6b3c;
     --lightgreen: #c8d2bf;
 
-    --textfont: "Nunito", sans-serif;
     --titlefont: "Atkinson Hyperlegible", sans-serif;
+    --textfont: "Nunito", sans-serif;
     --secondaryfont: "IBM Plex Sans", sans-serif;
 }
 
@@ -232,7 +232,7 @@ main img, main video, main audio {
 }
 
 main img, main video {
-    border: 2px solid var(--darkgreen);
+    border: 2px solid var(--medgreen);
 }
 
 /* -------------------------------------------- SPECIFICS --------------------------------------------*/
