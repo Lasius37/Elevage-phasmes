@@ -84,9 +84,13 @@ header nav .main-menu-title, header nav .main-menu-home .home {
     box-sizing: border-box;
 }
 
-header nav li.main-menu {
-    height: 100%;
+header nav li.main-menu, header nav li.main-menu-home {
     position: relative;
+}
+
+.main-menu-home .menu, .main-menu-home .menu .sub-menu{
+    height: 100%;
+    box-sizing: border-box;
 }
 
 header nav li.main-menu span.main-menu-title {
@@ -138,7 +142,7 @@ header nav li.sub-menu a.sub-menu-link:active {
 header nav li.sub-menu a.sub-menu-link.home {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 header nav a.home img.logo-img {
