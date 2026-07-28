@@ -9,9 +9,9 @@
     --medgreen: #4f6b3c;
     --lightgreen: #c8d2bf;
 
-    --textfont: "Nunito";
-    --titlefont: "Atkinson Hyperlegible";
-    --secondaryfont: "IBM Plex Sans";
+    --textfont: "Nunito", sans-serif;
+    --titlefont: "Atkinson Hyperlegible", sans-serif;
+    --secondaryfont: "IBM Plex Sans", sans-serif;
 }
 
 body {
@@ -28,12 +28,27 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--titlefont);
 }
 
+h1 {
+    font-size: 3rem;
+    color: var(--medgreen);
+    margin: 1em auto;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.7rem
+}
+
 ul, li {
     list-style: none;
 }
 
 p, ul, li, a {
     font-family: var(--textfont);
+    font-size: 1.4rem;
 }
 
 .latin {
@@ -42,26 +57,67 @@ p, ul, li, a {
 
 /* -------------------------------------------- HEADER AND MENU --------------------------------------------*/
 header {
-    background-color: var(--darkgreen);
+    background-color: var(--medgreen);
     color: var(--white);
 }
 
-header .menu {
-    padding: 5px 8px;
+header nav {
+
 }
 
-header .main-menu {
-    border: 1px solid blue;
+header nav > ul {
+    padding: 2rem 2rem 0 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 3rem;
 }
 
-header .sub-menu {
-    border: 1px solid red;
+header nav > ul > li {
+    position: relative;
 }
 
-header li.sub-menu {
+header nav .main-menu-title, header nav .main-menu-home .home {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
 }
 
-header a {
+header nav li.main-menu {
+    height: 100%;
+    position: relative;
+}
+
+header nav li.main-menu span.main-menu-title {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+header nav li.main-menu ul.menu, header nav li.main-menu-home ul.menu {
+    padding: 0;
+}
+
+header nav li.main-menu ul.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+header nav li.main-menu:hover > ul.menu {
+    display: block;
+}
+
+header nav li.main-menu:hover > span.main-menu-title {
+    background-color: var(--darkgreen);
+}
+
+header nav li.sub-menu {
+    background-color: var(--medgreen);
+    white-space: nowrap;
+}
+
+header nav li.sub-menu a.sub-menu-link {
     display: block;
     text-decoration: none;
     color: var(--white);
@@ -69,21 +125,125 @@ header a {
     padding: 5px 8px;
 }
 
-header a:hover {
+header nav li.sub-menu a.sub-menu-link:hover {
     color: var(--white);
-    background-color: var(--medgreen);
+    background-color: var(--darkgreen);
 }
 
-header a:active {
-    color: var(--darkgreen);
+header nav li.sub-menu a.sub-menu-link:active {
+    color: var(--medgreen);
     background-color: var(--lightgreen);
 }
 
+header nav li.sub-menu a.sub-menu-link.home {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header nav a.home img.logo-img {
+    height: 2rem;
+    border-radius: 50%;
+}
+
+/* -------------------------------------------- MAIN --------------------------------------------*/
+main p {
+    line-height: 2.5rem;
+}
+
+p.redirect {
+    margin: auto;
+    width: fit-content;
+}
+
+main section {
+    margin: 2rem auto;
+    max-width: 1000px;
+}
+
+main h1 {
+    text-align: center;
+}
+
+main h2 {
+    color: var(--medgreen);
+    border-bottom: 2px solid var(--medgreen);
+    margin: 0.7em 0;
+}
+
+main h3 {
+    color: var(--medgreen);
+}
+
+main p {
+    color: var(--darkgreen)
+}
+
+.home-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+}
+
+.home-cards .card {
+    border: 2px solid var(--medgreen);
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 30%;
+}
+
+.home-cards .card h3 {
+    padding: 0.5rem;
+    background-color: var(--lightgreen);
+    text-align: center;
+    overflow: none;
+}
+.home-cards .card p {
+    padding: 0.5rem;
+    margin: 0;
+}
 
 /* -------------------------------------------- MEDIA --------------------------------------------*/
-img, video, audio {
+main img, main video, main audio {
     font-family: var(--secondaryfont);
-    border-radius: 10px;
-    border: 2px solid var(--medgreen);
+    border-radius: 1rem;
     margin: 5px;
+    padding: 5px;
+    color: var(--darkgreen);
+}
+
+main img, main video {
+    border: 2px solid var(--darkgreen);
+}
+
+/* -------------------------------------------- SPECIFICS --------------------------------------------*/
+img.index-logo {
+    display: block;
+    width: 350px;
+    margin: auto;
+}
+
+.slideshow {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+img.redirect {
+    display: block;
+    margin: 1em auto;
+}
+
+/* -------------------------------------------- FOOTER --------------------------------------------*/
+footer {
+    height: 10rem;
+    background-color: var(--darkgreen);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    color: white;
+    width: fit-content;
 }

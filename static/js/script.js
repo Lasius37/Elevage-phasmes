@@ -19,9 +19,11 @@ const STATIC = new URL("static/", ROOT).href;
 const CSS = new URL("css/", STATIC).href;
 const DATA = new URL("data/", STATIC).href;
 const JS = new URL("js/", STATIC).href;
+const IMAGES = new URL("images/", STATIC).href;
 const PAGES = new URL("pages/", ROOT).href;
 
 const MENU_DATA_FILE = new URL("menu.json", DATA).href;
+const LOGO_IMG = new URL("logo.png", IMAGES).href;
 
 
 // Charge les données du menu depuis le fichier JSON ----------------------------------------------
@@ -53,16 +55,19 @@ async function createMenu() {
 
         menu.forEach(section => {
             const sectionLi = document.createElement("li");
-            sectionLi.classList.add("main-menu");
 
             // Ajout du titre de la section, s’il existe
             if (section.title) {
+                sectionLi.classList.add("main-menu")
                 const span = document.createElement("span");
 
                 span.textContent = section.title;
                 span.classList.add("main-menu-title");
 
                 sectionLi.appendChild(span);
+            }
+            else {
+                sectionLi.classList.add("main-menu-home");
             }
 
             // Création du sous-menu
@@ -80,11 +85,22 @@ async function createMenu() {
                 // Les autres pages se trouvent dans le dossier pages.
                 if (link.href === "index") {
                     a.href = new URL("index.html", ROOT).href;
+                    a.classList.add("home")
+                    const logo = document.createElement("img");
+                    logo.src = LOGO_IMG;
+                    logo.classList.add("logo-img");
+
+                    const span = document.createElement("span");
+                    span.textContent = link.text;
+
+                    a.appendChild(logo);
+                    a.appendChild(span);
                 } else {
                     a.href = new URL(`${link.href}.html`, PAGES).href;
+                    a.textContent = link.text;
                 }
 
-                a.textContent = link.text;
+
 
                 li.appendChild(a);
                 subUl.appendChild(li);

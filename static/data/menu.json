@@ -8,21 +8,31 @@
     {
         "title": "Biologie",
         "links": [
-            { "text": "Morphologie et anatomie", "href": "morpho-anat" },
-            { "text": "Classification", "href": "classif" },
-            { "text": "Habitat naturel", "href": "habitat" },
-            { "text": "Alimentation", "href": "feeding" },
-            { "text": "Reproduction et cycle de vie", "href": "reproduction" }
+            { "text": "Morphologie et anatomie", "href":  "redirect", "normal-href": "morpho-anat" },
+            { "text": "Classification", "href":  "redirect", "normal-href": "classif" },
+            { "text": "Habitat naturel", "href":  "redirect", "normal-href": "habitat" },
+            { "text": "Alimentation", "href":  "redirect", "normal-href": "feeding" },
+            { "text": "Reproduction et cycle de vie", "href":  "redirect", "normal-href": "reproduction" }
         ]
     },
     {
         "title": "Élevage",
         "links": [
-            { "text": "Construire un vivarium", "href": "vivarium" },
-            { "text": "Obtenir des phasmes", "href": "get" },
-            { "text": "Se procurer le matériel d'élevage", "href": "tools" },
-            { "text": "Entretenir l'élevage", "href": "daily-care" },
-            { "text": "Contrôler la population", "href": "overpopulation" }
+            { "text": "Le matériel d'élevage", "href":  "tools" },
+            { "text": "Obtenir des phasmes", "href":  "redirect", "normal-href": "get" },
+            { "text": "Entretenir l'élevage", "href":  "redirect", "normal-href": "daily-care" },
+            { "text": "Contrôler la population", "href":  "redirect", "normal-href": "overcrowding" }
+        ]
+    },
+    {
+        "title": "Construire son vivarium",
+        "links": [
+            { "text": "Le projet", "href":  "redirect", "normal-href": "project" },
+            { "text": "Le châssis", "href":  "redirect", "normal-href": "structure" },
+            { "text": "Les parois vitrées", "href":  "redirect", "normal-href": "glass" },
+            { "text": "La ventilation", "href":  "redirect", "normal-href": "air" },
+            { "text": "L'ouverture", "href":  "redirect", "normal-href": "door" },
+            { "text": "Les finitions", "href":  "redirect", "normal-href": "finishes" }
         ]
     }
 ]
