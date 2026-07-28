@@ -20,7 +20,7 @@
         "links": [
             { "text": "Le matériel d'élevage", "href":  "tools" },
             { "text": "Obtenir des phasmes", "href":  "get" },
-            { "text": "Entretenir l'élevage", "href":  "redirect", "normal-href": "daily-care" },
+            { "text": "Entretenir l'élevage", "href":  "daily-care" },
             { "text": "Contrôler la population", "href":  "redirect", "normal-href": "overcrowding" }
         ]
     },
