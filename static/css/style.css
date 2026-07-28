@@ -143,6 +143,7 @@ header nav li.sub-menu a.sub-menu-link.home {
     display: flex;
     align-items: center;
     gap: 20px;
+    padding: 0 16px;
 }
 
 header nav a.home img.logo-img {
@@ -171,8 +172,9 @@ main h1 {
 
 main h2 {
     color: var(--medgreen);
-    border-bottom: 2px solid var(--medgreen);
+    border-bottom: 4px solid var(--medgreen);
     margin: 0.7em 0;
+    padding-bottom: 0.3rem;
 }
 
 main h3 {
@@ -183,28 +185,41 @@ main p {
     color: var(--darkgreen)
 }
 
-.home-cards {
+.cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 3em;
 }
 
-.home-cards .card {
+.cards .card {
     border: 2px solid var(--medgreen);
     border-radius: 1rem;
     overflow: hidden;
-    width: 30%;
+    width: 100%;
+    max-width: 450px;
 }
 
-.home-cards .card h3 {
+.cards .card h3 {
     padding: 0.5rem;
     background-color: var(--lightgreen);
     text-align: center;
     overflow: none;
 }
-.home-cards .card p {
+.cards .card p {
     padding: 0.5rem;
     margin: 0;
+    text-align: justify;
+}
+
+.cards .card img {
+    display: block;
+    width: fit-content;
+    max-width: 90%;
+    max-height: 20rem;
+    border: none;
+    margin: auto;
+    margin-top: 0.5rem;
 }
 
 /* -------------------------------------------- MEDIA --------------------------------------------*/
@@ -221,7 +236,7 @@ main img, main video {
 }
 
 /* -------------------------------------------- SPECIFICS --------------------------------------------*/
-img.index-logo {
+.page-hero img {
     display: block;
     width: 350px;
     margin: auto;
