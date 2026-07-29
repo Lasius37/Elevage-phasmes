@@ -39,7 +39,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.7rem
+    font-size: 1.5rem
 }
 
 ul, li {
@@ -48,7 +48,7 @@ ul, li {
 
 p, ul, li, a {
     font-family: var(--textfont);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .latin {
@@ -59,10 +59,6 @@ p, ul, li, a {
 header {
     background-color: var(--medgreen);
     color: var(--white);
-}
-
-header nav {
-
 }
 
 header nav > ul {
@@ -152,8 +148,12 @@ header nav a.home img.logo-img {
 }
 
 /* -------------------------------------------- MAIN --------------------------------------------*/
+main {
+    padding: 1rem;
+}
+
 main p {
-    line-height: 2.5rem;
+    line-height: 1.5;
 }
 
 p.redirect {
@@ -162,8 +162,7 @@ p.redirect {
 }
 
 main section {
-    margin: 2rem auto;
-    max-width: 1000px;
+    margin: 2rem 5%;
 }
 
 main h1 {
@@ -188,23 +187,22 @@ main p {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 3em;
+    justify-content: center;
+    gap: 2em;
 }
 
 .cards .card {
     border: 2px solid var(--medgreen);
     border-radius: 1rem;
     overflow: hidden;
-    width: 100%;
-    max-width: 450px;
+    width: 30%;
 }
 
 .cards .card h3 {
     padding: 0.5rem;
     background-color: var(--lightgreen);
     text-align: center;
-    overflow: none;
+    overflow: hidden;
 }
 .cards .card p {
     padding: 0.5rem;
@@ -214,12 +212,29 @@ main p {
 
 .cards .card img {
     display: block;
-    width: fit-content;
-    max-width: 90%;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
     max-height: 20rem;
     border: none;
     margin: auto;
     margin-top: 0.5rem;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+.cards .card ol.tasks {
+    border: 1px solid red;
+    margin: 0;
+    padding: 0;
+    list-style: numeric;
+    display: list-item;
+}
+
+.cards .card ol.tasks li {
+    border: 1px solid blue;
+    padding: 0 0.5rem;
+    text-align: justify;
 }
 
 /* -------------------------------------------- MEDIA --------------------------------------------*/
