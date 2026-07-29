@@ -12,6 +12,8 @@
     --titlefont: "Atkinson Hyperlegible", sans-serif;
     --textfont: "Nunito", sans-serif;
     --secondaryfont: "IBM Plex Sans", sans-serif;
+
+    --cards-gap: 2em;
 }
 
 body {
@@ -42,7 +44,7 @@ h3 {
     font-size: 1.5rem
 }
 
-ul, li {
+header ul, header li {
     list-style: none;
 }
 
@@ -188,14 +190,15 @@ main p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2em;
+    gap: var(--cards-gap);
 }
 
 .cards .card {
     border: 2px solid var(--medgreen);
     border-radius: 1rem;
     overflow: hidden;
-    width: 30%;
+    box-sizing: border-box;
+    flex: 0 0 calc((100% - 2 * var(--cards-gap)) / 3);
 }
 
 .cards .card h3 {
@@ -224,17 +227,16 @@ main p {
 }
 
 .cards .card ol.tasks {
-    border: 1px solid red;
     margin: 0;
-    padding: 0;
-    list-style: numeric;
-    display: list-item;
+    padding: 0 0.5rem 1rem 0.5rem;
+    padding-left: 2.5rem;
+    list-style: decimal;
 }
 
 .cards .card ol.tasks li {
-    border: 1px solid blue;
-    padding: 0 0.5rem;
+    padding: 0;
     text-align: justify;
+    display: list-item;
 }
 
 /* -------------------------------------------- MEDIA --------------------------------------------*/
