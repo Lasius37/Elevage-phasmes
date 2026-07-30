@@ -10,7 +10,7 @@
         "links": [
             { "text": "Morphologie et anatomie", "href":  "redirect", "normal-href": "morpho-anat" },
             { "text": "Classification", "href":  "redirect", "normal-href": "classif" },
-            { "text": "Habitat naturel", "href":  "redirect", "normal-href": "habitat" },
+            { "text": "Habitat naturel et mode de vie", "href":  "redirect", "normal-href": "habitat" },
             { "text": "Alimentation", "href":  "redirect", "normal-href": "feeding" },
             { "text": "Reproduction et cycle de vie", "href":  "redirect", "normal-href": "reproduction" }
         ]
