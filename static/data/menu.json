@@ -12,8 +12,9 @@
             { "text": "Classification", "href":  "redirect", "normal-href": "classif" },
             { "text": "Habitat naturel et mode de vie", "href":  "redirect", "normal-href": "habitat" },
             { "text": "Alimentation", "href":  "redirect", "normal-href": "feeding" },
-            { "text": "Reproduction et cycle de vie", "href":  "redirect", "normal-href": "reproduction" }
-        ]
+            { "text": "Reproduction et cycle de vie", "href":  "redirect", "normal-href": "reproduction" },
+            { "text": "Défense contre les prédateurs", "href":  "redirect", "normal-href": "predators" }
+		]
     },
     {
         "title": "Élevage",
