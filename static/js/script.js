@@ -132,9 +132,10 @@ async function createFooter() {
         footerData.forEach(elementData => {
             const element = document.createElement(elementData.tag);
 
-            element.children.forEach(childData => {
+            elementData.children.forEach(childData => {
                 if (childData.type === "text") {
                     const text = document.createTextNode(childData.content);
+                    element.appendChild(text);
                 }
                 else if (childData.type === "link") {
                     const link = document.createElement("a");
@@ -144,7 +145,7 @@ async function createFooter() {
                     link.textContent = childData.content;
                     link.rel = childData.rel;
 
-                    element.appendchild(link);
+                    element.appendChild(link);
                 }
             });
 

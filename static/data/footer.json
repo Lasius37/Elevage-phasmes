@@ -1,0 +1,31 @@
+[
+    {
+		"tag": "p",
+		"children": [
+			{
+				"type": "text",
+				"content": "Sauf indication contraire, les textes, les photographies, les schémas, les vidéos présents sur ce site sont de Guillaume Peyrard, et sont placés sous licence "
+			},
+			{
+				"type": "link",
+				"content": "CC BY-NC-SA 4.0",
+				"href": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr",
+				"target": "_blank",
+				"rel": "license noopener noreferrer"
+			},
+			{
+				"type": "text",
+				"content": "."
+			}
+		]
+	},
+	{
+		"tag": "p",
+		"children": [
+			{
+				"type": "text",
+				"content": "Les photographies appartenant à d’autres auteurs restent soumises aux licences indiquées dans leurs crédits."
+			}
+		]
+    }
+]

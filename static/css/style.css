@@ -283,19 +283,22 @@ img.redirect {
 
 /* -------------------------------------------- FOOTER --------------------------------------------*/
 footer {
-    height: 15rem;
     background-color: var(--darkgreen);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    padding: 2rem 0;
+    min-height: 10rem;
+    margin-top: 3rem;
 }
 
 footer p {
+    margin: 0;
     color: white;
     width: fit-content;
-    max-width: 50%;
+    max-width: 70%;
     text-align: center;
 }
 
