@@ -234,6 +234,10 @@ main p {
     box-sizing: border-box;
 }
 
+.cards .card img.tools {
+    width: fit-content;
+}
+
 .cards .card ol.tasks {
     margin: 0;
     padding: 0 0.5rem 1rem 2.5rem;
