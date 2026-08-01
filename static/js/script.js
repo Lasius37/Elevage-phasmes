@@ -23,12 +23,13 @@ const IMAGES = new URL("images/", STATIC).href;
 const PAGES = new URL("pages/", ROOT).href;
 
 const MENU_DATA_FILE = new URL("menu.json", DATA).href;
+const FOOTER_DATA_FILE = new URL("footer.json", DATA).href;
 const LOGO_IMG = new URL("logo.png", IMAGES).href;
 
 
 // Charge les données du menu depuis le fichier JSON ----------------------------------------------
-async function loadMenuData() {
-    const response = await fetch(MENU_DATA_FILE);
+async function loadJsonData(file) {
+    const response = await fetch(file);
 
     if (!response.ok) {
         throw new Error(
@@ -50,7 +51,7 @@ async function createMenu() {
     }
 
     try {
-        const menu = await loadMenuData();
+        const menu = await loadJsonData(MENU_DATA_FILE);
         const mainUl = document.createElement("ul");
 
         menu.forEach(section => {
@@ -116,6 +117,47 @@ async function createMenu() {
     }
 }
 
+// Crée le footer ---------------------------------------------------------------------------------
+async function createFooter() {
+    const footer = document.querySelector("footer");
+
+    if (!footer) {
+        console.error("Impossible de créer le footer : aucun élément <footer> trouvé la page.");
+        return;
+    }
+
+    try {
+        const footerData = await loadJsonData(FOOTER_DATA_FILE);
+
+        footerData.forEach(elementData => {
+            const element = document.createElement(elementData.tag);
+
+            element.children.forEach(childData => {
+                if (childData.type === "text") {
+                    const text = document.createTextNode(childData.content);
+                }
+                else if (childData.type === "link") {
+                    const link = document.createElement("a");
+
+                    link.href = childData.href;
+                    link.target = childData.target;
+                    link.textContent = childData.content;
+                    link.rel = childData.rel;
+
+                    element.appendchild(link);
+                }
+            });
+
+            footer.appendChild(element);
+        });
+    } catch (error) {
+        console.error("Erreur lors de la création du footer :", error);
+    }
+}
+
 
 // Lance la création du menu lorsque le document HTML est chargé ---------------------------------
-document.addEventListener("DOMContentLoaded", createMenu);
+document.addEventListener("DOMContentLoaded", () => {
+    createMenu();
+    createFooter();
+});
