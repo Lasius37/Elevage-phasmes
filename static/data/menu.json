@@ -8,8 +8,8 @@
     {
         "title": "Biologie",
         "links": [
-            { "text": "Morphologie", "href": "morphology" },
-            { "text": "Anatomie", "href": "anatomy" },
+            { "text": "Morphologie (l'aspect extérieur)", "href": "morphology" },
+            { "text": "Anatomie (les organes internes)", "href": "anatomy" },
             { "text": "Classification", "href": "classif" },
             { "text": "Milieu de vie et mode de vie", "href": "habitat" },
             { "text": "Reproduction et cycle de vie", "href":  "redirect", "normal-href": "reproduction" },
