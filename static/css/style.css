@@ -16,12 +16,18 @@
     --cards-gap: 2em;
 }
 
+html, body {
+    min-height: 100vh;
+}
+
 body {
     background-color: var(--white);
     color: var(--black);
+    display: flex;
+    flex-direction: column;
 }
 
-html, body, header, h1, h2, h3, h4, h5, h6, ul, li, a {
+html, body, header, h1, h2, h3, h4, h5, h6, ul, li, a, dt, dd {
     margin: 0;
     padding: 0;
 }
@@ -48,12 +54,21 @@ header ul, header li {
     list-style: none;
 }
 
-p, ul, li, a, figcaption {
+p, ul, li, a, dd, dt {
     font-family: var(--textfont);
     font-size: 1.2rem;
 }
 
+dt {
+    font-weight: bold;
+}
+
+p, dd {
+    text-indent: 2rem;
+}
+
 figcaption, figcaption * {
+    font-family: var(--textfont);
     font-size: 0.8rem;
     text-align: center;
 }
@@ -160,9 +175,10 @@ header nav a.home img.logo-img {
 /* -------------------------------------------- MAIN --------------------------------------------*/
 main {
     padding: 1rem;
+    flex: 1;
 }
 
-main p {
+main p, main li, main dt, main dd {
     line-height: 1.5;
 }
 
@@ -190,38 +206,121 @@ main h3 {
     color: var(--medgreen);
 }
 
-main p {
-    color: var(--darkgreen)
-}
 
-.cards {
+.cards, .infos {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: var(--cards-gap);
 }
 
-.cards .card {
+.infos {
+    flex-direction: column;
+}
+
+.cards {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card, .info {
     border: 2px solid var(--medgreen);
     border-radius: 1rem;
     overflow: hidden;
     box-sizing: border-box;
-    flex: 0 0 calc((100% - 2 * var(--cards-gap)) / 3);
 }
 
-.cards .card h3 {
-    padding: 0.5rem;
-    background-color: var(--lightgreen);
-    text-align: center;
-    overflow: hidden;
-}
-.cards .card p {
+.card p, .info p, .info li {
     padding: 0.5rem;
     margin: 0;
     text-align: justify;
 }
 
-.cards .card img {
+.info dt, .info dd {
+    padding: 0 0.5rem;
+}
+
+.info ul {
+    list-style: disc inside;
+    margin: 0.5em auto;
+}
+
+.info ul li {
+    padding-top: 0;
+    padding-bottom: 0;
+    text-indent: 2rem;
+}
+
+.info .grid-content, .info .grid-content-reverse, .info .triple-grid-content {
+    display: grid;
+}
+
+.info .grid-content {
+    grid-template-columns: 2fr 1fr;
+}
+
+.info .grid-content-reverse {
+    grid-template-columns: 1fr 2fr;
+}
+
+.info .triple-grid-content {
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.info .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info .media {
+    display: flex;
+    flex-direction: column;
+    gap: var(--card-gap);
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    line-height: 1em;
+}
+
+.info img {
+    display: block;
+    max-width: 100%;
+    border-radius: 1rem;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.info img.no-border-radius {
+    border-radius: 0;
+}
+
+.info figure {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.info iframe {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    border: none;
+    border-radius: 1rem;
+}
+
+.card {
+    flex: 0 0 calc((100% - 2 * var(--cards-gap)) / 3);
+}
+
+.card h3, .info h3 {
+    padding: 0.5rem;
+    background-color: var(--lightgreen);
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+.card img {
     display: block;
     width: 100%;
     height: 200px;
@@ -234,17 +333,17 @@ main p {
     box-sizing: border-box;
 }
 
-.cards .card img.tools {
+.card img.tools {
     width: fit-content;
 }
 
-.cards .card ol.tasks {
+.card ol.tasks {
     margin: 0;
     padding: 0 0.5rem 1rem 2.5rem;
     list-style: decimal;
 }
 
-.cards .card ol.tasks li {
+.card ol.tasks li {
     padding: 0;
     text-align: justify;
     display: list-item;
@@ -257,10 +356,6 @@ main img, main video, main audio {
     margin: 5px;
     padding: 5px;
     color: var(--darkgreen);
-}
-
-main img, main video {
-    border: 2px solid var(--medgreen);
 }
 
 /* -------------------------------------------- SPECIFICS --------------------------------------------*/
@@ -304,16 +399,37 @@ footer p {
 
 footer a {
     text-decoration: none;
-    color: var(--medgreen);
-    white-space: nowrap;
-    padding: 0 0.5rem;
+    padding: 0;
+    border: 2px solid var(--darkgreen);
+    display: block;
+    width: fit-content;
+    margin: auto;
 }
 
 footer a:hover {
-    background-color: var(--lightgreen);
+    border-color: var(--lightgreen);
 }
 
 footer a:active {
     color: var(--lightgreen);
-    background-color: var(--medgreen);
+    border-color: var(--medgreen);
+}
+
+footer img {
+    height: 1.5rem;
+    display: block;
+    margin: auto;
+}
+
+.info a:has(img.cc-logo), .card a:has(img.cc-logo) {
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+
+.info img.cc-logo, .card img.cc-logo {
+    border-radius: 0;
+    height: 2rem;
+    margin: auto;
+    width: auto;
 }

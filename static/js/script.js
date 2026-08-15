@@ -16,6 +16,7 @@ if (CURRENT_URL.pathname.includes("/pages/")) {
 
 // Création des chemins vers les différents répertoires -------------------------------------------
 const STATIC = new URL("static/", ROOT).href;
+const LOGOS = new URL("logos/", STATIC).href;
 const CSS = new URL("css/", STATIC).href;
 const DATA = new URL("data/", STATIC).href;
 const JS = new URL("js/", STATIC).href;
@@ -24,7 +25,7 @@ const PAGES = new URL("pages/", ROOT).href;
 
 const MENU_DATA_FILE = new URL("menu.json", DATA).href;
 const FOOTER_DATA_FILE = new URL("footer.json", DATA).href;
-const LOGO_IMG = new URL("logo.png", IMAGES).href;
+const LOGO_IMG = new URL("logo.png", LOGOS).href;
 
 
 // Charge les données du menu depuis le fichier JSON ----------------------------------------------
@@ -101,8 +102,6 @@ async function createMenu() {
                     a.textContent = link.text;
                 }
 
-
-
                 li.appendChild(a);
                 subUl.appendChild(li);
             });
@@ -116,6 +115,7 @@ async function createMenu() {
         console.error("Erreur lors de la création du menu :", error);
     }
 }
+
 
 // Crée le footer ---------------------------------------------------------------------------------
 async function createFooter() {
@@ -136,15 +136,21 @@ async function createFooter() {
                 if (childData.type === "text") {
                     const text = document.createTextNode(childData.content);
                     element.appendChild(text);
-                }
-                else if (childData.type === "link") {
+                } else if (childData.type === "link") {
                     const link = document.createElement("a");
 
                     link.href = childData.href;
                     link.target = childData.target;
-                    link.textContent = childData.content;
                     link.rel = childData.rel;
 
+                    const image = document.createElement("img");
+                    const path = new URL(childData.imageFile, LOGOS).href;
+
+                    image.src = path;
+                    image.alt = childData.imageAlt;
+                    image.classList.add(childData.imageClasses);
+
+                    link.appendChild(image);
                     element.appendChild(link);
                 }
             });
