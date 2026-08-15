@@ -8,10 +8,10 @@
     {
         "title": "Biologie",
         "links": [
-            { "text": "Morphologie et anatomie", "href": "morpho-anat" },
+            { "text": "Morphologie", "href": "morphology" },
+            { "text": "Anatomie", "href": "anatomy" },
             { "text": "Classification", "href": "classif" },
             { "text": "Milieu de vie et mode de vie", "href": "habitat" },
-            { "text": "Alimentation", "href":  "redirect", "normal-href": "feeding" },
             { "text": "Reproduction et cycle de vie", "href":  "redirect", "normal-href": "reproduction" },
             { "text": "Protection contre les prédateurs", "href":  "redirect", "normal-href": "predators" }
 		]
