@@ -18,7 +18,7 @@
     </header>
 
     <!-- MAIN ------------------------------------------------------------------------------------------------------ -->
-    <main>
+    <main id="top">
         <section class="page-hero">
             <h1>Soigner ses phasmes</h1>
 
@@ -32,82 +32,411 @@
         <section>
             <h2>Quel problème observes-tu ?</h2>
 
-            <p>
-                Observe ton phasme ou son vivarium, puis choisis ce qui correspond le mieux à ce que tu vois.
-            </p>
+            <p>Observe ton phasme ou son vivarium, puis choisis ce qui correspond le mieux à ce que tu vois.</p>
 
-            <div class="problems">
-                <a class="problem" href="#fast">
-                    <article>
-                        <h3>Mon phasme ne mange plus</h3>
-                        <p>Les feuilles ne sont plus grignotées.</p>
-                    </article>
+            <div class="cards">
+                <a class="card" href="#fast">
+                    <h3>Mon phasme ne mange plus</h3>
+                    <p>Les feuilles ne sont plus grignotées.</p>
                 </a>
 
-                <a class="problem" href="#egg">
-                    <article>
-                        <h3>Un jeune phasme reste accroché à son œuf</h3>
-                        <p>Il a commencé à sortir mais ne parvient pas à se libérer complètement.</p>
-                    </article>
+                <a class="card" href="#egg">
+                    <h3>Un jeune phasme reste accroché à son œuf</h3>
+                    <p>Il a commencé à sortir mais ne parvient pas à se libérer complètement.</p>
                 </a>
 
-                <a class="problem" href="#molt">
-                    <article>
-                        <h3>La mue de mon phasme se passe mal</h3>
-                        <p>Il reste coincé, tombe pendant sa mue ou ressort déformé.</p>
-                    </article>
+                <a class="card" href="#molt">
+                    <h3>La mue de mon phasme se passe mal</h3>
+                    <p>Il reste coincé, tombe pendant sa mue ou ressort déformé.</p>
                 </a>
 
-                <a class="problem" href="#weak">
-                    <article>
-                        <h3>Mon phasme est faible ou tombe souvent</h3>
-                        <p>Il reste au sol, s'accroche mal ou tombe régulièrement.</p>
-                    </article>
+                <a class="card" href="#weak">
+                    <h3>Mon phasme est faible ou tombe souvent</h3>
+                    <p>Il reste au sol, s'accroche mal ou tombe régulièrement.</p>
                 </a>
 
-                <a class="problem" href="#leg">
-                    <article>
-                        <h3>Mon phasme a perdu une patte ou une antenne</h3>
-                        <p>Une ou plusieurs pattes sont absentes ou abîmées, ou une antenne est plus courte.</p>
-                    </article>
+                <a class="card" href="#leg">
+                    <h3>Mon phasme a perdu une patte ou une antenne</h3>
+                    <p>Une ou plusieurs pattes sont absentes ou abîmées, ou une antenne est plus courte.</p>
                 </a>
 
-                <a class="problem" href="#wounded">
-                    <article>
-                        <h3>Mon phasme est blessé</h3>
-                        <p>Une blessure est visible ou un liquide vert apparaît.</p>
-                    </article>
+                <a class="card" href="#wounded">
+                    <h3>Mon phasme est blessé</h3>
+                    <p>Une blessure est visible ou un liquide vert apparaît.</p>
                 </a>
 
-                <a class="problem" href="#poop">
-                    <article>
-                        <h3>Les crottes de mon phasme sont anormales</h3>
-                        <p>Elles sont très liquides ou il n'en fait plus.</p>
-                    </article>
+                <a class="card" href="#poop">
+                    <h3>Les crottes de mon phasme sont anormales</h3>
+                    <p>Elles sont très liquides ou il n'en fait plus.</p>
                 </a>
 
-                <a class="problem" href="#spasm">
-                    <article>
-                        <h3>Mon phasme a des spasmes ou se paralyse</h3>
-                        <p>Il tremble, bouge anormalement ou ne peut plus se déplacer normalement.</p>
-                    </article>
+                <a class="card" href="#spasm">
+                    <h3>Mon phasme a des spasmes ou se paralyse</h3>
+                    <p>Il tremble, bouge anormalement ou ne peut plus se déplacer normalement.</p>
                 </a>
 
-                <a class="problem" href="#pests">
-                    <article>
-                        <h3>Il y a des petites bêtes</h3>
-                        <p>On voit des petits points noirs sur les phasmes ou dans le vivarium.</p>
-                    </article>
+                <a class="card" href="#pests">
+                    <h3>Il y a des petites bêtes</h3>
+                    <p>On voit des petits points noirs sur les phasmes ou dans le vivarium.</p>
                 </a>
 
-                <a class="problem" href="#mold">
-                    <article>
-                        <h3>Il y a de la moisissure</h3>
-                        <p>Elle peut apparaître sur le décor, les végétaux ou les œufs.</p>
-                    </article>
+                <a class="card" href="#mold">
+                    <h3>Il y a de la moisissure</h3>
+                    <p>Elle peut apparaître sur le décor, les végétaux ou les œufs.</p>
                 </a>
             </div>
         </section>
+
+        <section id="fast">
+            <div class="problem-header">
+                <h2>Mon phasme ne mange plus</h2>
+                <a href="#top"><i class="bi bi-arrow-up-circle"></i></a>
+            </div>
+
+            <p>
+                Un phasme peut arrêter de manger pour plusieurs raisons. Commence par vérifier les causes suivantes
+                dans l'ordre.
+            </p>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>Il prépare une mue</h3>
+                    <p>
+                        Avant de muer, un phasme peut arrêter de manger et rester immobile. C'est un comportement
+                        normal.
+                    </p>
+                    <ol>
+                        <li>Ne le manipule pas et laisse-le tranquille</li>
+                        <li>Vérifie que ton vivarium a une hauteur d'au moins 3 fois la taille du phasme</li>
+                    </ol>
+                </article>
+
+                <article class="card">
+                    <h3>La nourriture ne lui convient pas</h3>
+                    <p>
+                        Les feuilles peuvent être trop vieilles, desséchées ou appartenir à une plante que ton
+                        phasme ne mange pas.
+                    </p>
+                    <ol>
+                        <li>Remplace-les par des feuilles fraîches adaptées à son espèce</li>
+                    </ol>
+                </article>
+
+                <article class="card">
+                    <h3>Les conditions du vivarium ne lui conviennent pas</h3>
+                    <p>Une température ou une humidité inadaptée peut perturber son comportement.</p>
+                    <ol>
+                        <li>Vérifie que la température et l'humidité correspondent aux besoins de l'espèce</li>
+                    </ol>
+                </article>
+
+                <article class="card">
+                    <h3>Il est stressé</h3>
+                    <p>
+                        Des manipulations fréquentes, des vibrations ou un changement brutal de son environnement
+                        peuvent le perturber.
+                    </p>
+                    <ol>
+                        <li>Évite de le manipuler pendant quelque temps</li>
+                        <li>laisse le vivarium dans un endroit calme</li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+
+        <section id="egg">
+            <div class="problem-header">
+                <h2>Un jeune phasme reste accroché à son œuf</h2>
+                <a href="#top"><i class="bi bi-arrow-up-circle"></i></a>
+            </div>
+
+            <p>À l'éclosion, un jeune phasme doit normalement parvenir à sortir entièrement de son œuf.</p>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>Les conditions d'incubation ne sont pas adaptées</h3>
+                    <p>Une humidité insuffisante peut rendre l'éclosion plus difficile.</p>
+                    <ol>
+                        <li>Vérifie les conditions d'incubation des œufs (température, humidité, aération)</li>
+                        <li>Adapte l'humidité aux besoins de l'espèce</li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+
+        <section id="molt">
+            <div class="problem-header">
+                <h2>La mue de mon phasme se passe mal</h2>
+                <a href="#top"><i class="bi bi-arrow-up-circle"></i></a>
+            </div>
+
+            <p>
+                Une mauvaise mue peut laisser un morceau de peau accroché, déformer une patte ou faire tomber le phasme.
+            </p>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>Il n'a pas assez de place pour muer</h3>
+                    <p>Un phasme doit pouvoir se suspendre et disposer de suffisamment d'espace sous lui.</p>
+                    <ol>
+                        <li>Vérifie la hauteur du vivarium</li>
+                        <li>Ajoute des supports auxquels les phasmes peuvent facilement s'accrocher</li>
+                    </ol>
+                </article>
+
+                <article class="card">
+                    <h3>L'humidité n'est pas adaptée</h3>
+                    <p>Une humidité inadaptée peut rendre la mue plus difficile.</p>
+                    <ol>
+                        <li>Vérifie les besoins de ton espèce et adapte les pulvérisations</li>
+                    </ol>
+                </article>
+
+                <article class="card">
+                    <h3>Il a été dérangé pendant sa mue</h3>
+                    <p>Les manipulations, les vibrations ou une chute peuvent interrompre une mue.</p>
+                    <ol>
+                        <li>Ne touche jamais un phasme en train de muer</li>
+                        <li>Évite de déplacer ou de secouer le vivarium</li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+
+        <section id="weak">
+            <div class="problem-header">
+                <h2>Mon phasme est faible ou tombe souvent</h2>
+                <a href="#top"><i class="bi bi-arrow-up-circle"></i></a>
+            </div>
+
+            <p>Un phasme qui reste au sol ou qui n'arrive plus à s'accrocher doit être surveillé.</p>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>Il ne mange pas assez</h3>
+                    <p>Un manque de nourriture peut progressivement affaiblir le phasme.</p>
+                    <ol>
+                        <li>Vérifie qu'il dispose de suffisamment de feuilles fraîches</li>
+                        <li>Regarde si elles sont grignotées</li>
+                    </ol>
+                </article>
+
+                <article class="card">
+                    <h3>Sa dernière mue s'est mal passée</h3>
+                    <p>Des pattes déformées ou abîmées peuvent l'empêcher de bien s'accrocher.</p>
+                    <ol>
+                        <li>Regarde si ses pattes sont normales</li>
+                        <li>Vérifie l'humidité dans le vivarium</li>
+                    </ol>
+                </article>
+
+                <article class="card">
+                    <h3>Les conditions du vivarium ne lui conviennent pas</h3>
+                    <p>Une température ou une humidité inadaptée peut affaiblir les phasmes.</p>
+                    <ol>
+                        <li>Vérifie que la température convient</li>
+                        <li>Vérifie que l'humidité convient</li>
+                    </ol>
+                </article>
+
+                <article class="card">
+                    <h3>Il s'est peut-être empoisonné</h3>
+                    <p>Pense à cette cause surtout si plusieurs phasmes deviennent faibles ou tombent soudainement.</p>
+                    <ol>
+                        <li>Remplace les végétaux par des végétaux provenant d'un endroit sans pesticides</li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+
+        <section id="leg">
+            <div class="problem-header">
+                <h2>Mon phasme a perdu une patte ou une antenne</h2>
+                <a href="#top"><i class="bi bi-arrow-up-circle"></i></a>
+            </div>
+
+            <p>Cela arrive parfois accidentellement. Si l'animal n'est pas adulte, les pattes peuvent repousser.</p>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>Il a eu un problème pendant une mue</h3>
+                    <p>Une patte peut rester coincée dans l'ancienne peau et être perdue pendant la mue.</p>
+                    <ol>
+                        <li>Vérifie que ton vivarium est assez haut (minimum 3 fois la longueur du phasme)</li>
+                        <li>Vérifie qu'il y a suffisamment de supports</li>
+                        <li>Contrôle l'humidité</li>
+                    </ol>
+                </article>
+
+                <article class="card">
+                    <h3>Il s'est blessé</h3>
+                    <p>Une chute, une branche ou un autre phasme peut endommager une patte ou une antenne.</p>
+                    <ol>
+                        <li>Cherche ce qui a pu provoquer la blessure</li>
+                        <li>Enlève les éléments dangereux ou piquants du vivarium.</li>
+                    </ol>
+                </article>
+
+                <article class="card">
+                    <h3>Il y a trop de phasmes</h3>
+                    <p>Le manque de place augmente les contacts, les chutes et les accidents.</p>
+                    <ol>
+                        <li>Réduis le nombre de phasmes ou utilise un vivarium plus grand.</li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+
+        <section id="wounded">
+            <div class="problem-header">
+                <h2>Mon phasme est blessé</h2>
+                <a href="#top"><i class="bi bi-arrow-up-circle"></i></a>
+            </div>
+
+            <p>
+                Un liquide vert peut parfois sortir d'une blessure : il s'agit de l'hémolymphe, le liquide circulatoire
+                des insectes.
+            </p>
+            <div class="cards">
+                <article class="card">
+                    <h3>Il s'est blessé dans le vivarium</h3>
+                    <p>Une chute ou un élément pointu du décor peut provoquer une blessure.</p>
+                    <ol>
+                        <li>Repère et enlève la cause de la blessure</li>
+                        <li>Évite ensuite de manipuler le phasme inutilement</li>
+                    </ol>
+                </article>
+
+                <article class="card">
+                    <h3>Un autre phasme l'a blessé</h3>
+                    <p>
+                        Les accidents sont plus fréquents lorsque les phasmes sont nombreux ou manquent de nourriture.
+                    </p>
+                    <ol>
+                        <li>Vérifie que le vivarium est assez grand</li>
+                        <li>Vérifie qu'il y a assez de nourriture pour tous les phasmes</li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+
+        <section id="poop">
+            <div class="problem-header">
+                <h2>Les crottes de mon phasme sont anormales</h2>
+                <a href="#top"><i class="bi bi-arrow-up-circle"></i></a>
+            </div>
+
+            <p>Comme tous les animaux, les phasmes peuvent être sujets à des problèmes de digestion.</p>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>Ses crottes sont liquides</h3>
+                    <p>Certains végétaux ou de très jeunes pousses peuvent être mal tolérés.</p>
+                    <ol>
+                        <li>Enlève les feuilles jeunes</li>
+                        <li>Si nécessaire, change les végétaux</li>
+                    </ol>
+                </article>
+
+                <article class="card">
+                    <h3>Il ne fait plus de crottes</h3>
+                    <p>C'est souvent parce qu'il ne mange plus. Une déshydratation peut également ralentir son transit.</p>
+                    <ol>
+                        <li>Vérifie d'abord s'il mange</li>
+                        <li>Contrôle l'humidité</li>
+                        <li>Change les végétaux</li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+
+        <section id="spasm">
+            <div class="problem-header">
+                <h2>Mon phasme a des spasmes ou se paralyse</h2>
+                <a href="#top"><i class="bi bi-arrow-up-circle"></i></a>
+            </div>
+
+            <p>En général, cela touche plusieurs phasmes.</p>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>Il s'est peut-être empoisonné</h3>
+                    <p>
+                        Des végétaux traités avec des pesticides ou un élément contaminé peuvent provoquer des troubles
+                        brutaux.
+                    </p>
+                    <ol>
+                        <li>Retire immédiatement les végétaux suspects</li>
+                        <li>Remplace-les par des végétaux provenant d'un endroit sans pesticides</li>
+                        <li>Enlève tous les éléments récemment ajoutés qui pourraient être contaminés</li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+
+        <section id="pests">
+            <div class="problem-header">
+                <h2>Il y a des petites bêtes</h2>
+                <a href="#top"><i class="bi bi-arrow-up-circle"></i></a>
+            </div>
+
+            <p>Il peut s'agir de petits insectes ou d'acariens introduits dans le vivarium.</p>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>Elles sont arrivées avec un élément extérieur</h3>
+                    <p>
+                        Des végétaux ou du décor prélevés dehors peuvent introduire de petits animaux dans le
+                        vivarium.
+                    </p>
+                    <ol>
+                        <li>Retire tous les éléments suspects</li>
+                        <li>Vérifie soigneusement les végétaux avant de les placer dans le vivarium</li>
+                    </ol>
+                </article>
+
+                <article class="card">
+                    <h3>Des déchets se sont accumulés</h3>
+                    <p>
+                        Les végétaux en décomposition, les cadavres et les moisissures peuvent attirer de petits
+                        animaux.</p>
+                    <ol>
+                        <li>Nettoie le vivarium complètement</li>
+                        <li>Vérifie que les petits animaux ne réapparaissent pas</li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+
+        <section id="mold">
+            <div class="problem-header">
+                <h2>Il y a de la moisissure</h2>
+                <a href="#top"><i class="bi bi-arrow-up-circle"></i></a>
+            </div>
+
+            <p>Ces champignons microscopiques peuvent être dangereux pour les phasmes, mais aussi pour toi.</p>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>Le vivarium est trop humide ou mal ventilé</h3>
+                    <p>Une forte humidité associée à un manque d'aération favorise le développement des moisissures.</p>
+                    <ol>
+                        <li>Réduis les pulvérisations si nécessaire</li>
+                        <li>Vérifie que l'air circule correctement dans le vivarium</li>
+                    </ol>
+                </article>
+
+                <article class="card">
+                    <h3>Des matières se décomposent</h3>
+                    <p>Les feuilles mortes, les restes de végétaux et les animaux morts favorisent les moisissures.</p>
+                    <ol>
+                        <li>Retire les éléments moisis ou en décomposition</li>
+                        <li>Nettoie le vivarium</li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+
     </main>
 
     <!-- FOOTER ---------------------------------------------------------------------------------------------------- -->
