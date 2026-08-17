@@ -241,7 +241,6 @@ a.card p {
 a.card:hover > h3 {
     background-color: var(--medgreen);
     color: var(--lightgreen);
-    border: none;
 }
 
 a.card:active {
@@ -339,6 +338,7 @@ a.card:active > h3 {
 
 .card {
     flex: 0 0 calc((100% - 2 * var(--cards-gap)) / 3);
+    overflow: hidden;
 }
 
 .card h3, .info h3 {
