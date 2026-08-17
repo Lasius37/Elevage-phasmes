@@ -12,29 +12,29 @@
             { "text": "Anatomie (les organes internes)", "href": "anatomy" },
             { "text": "Classification", "href": "classif" },
             { "text": "Milieu de vie et mode de vie", "href": "habitat" },
-            { "text": "Reproduction et cycle de vie", "href":  "redirect", "normal-href": "reproduction" },
-            { "text": "Protection contre les prédateurs", "href":  "redirect", "normal-href": "predators" }
+            { "text": "Reproduction et cycle de vie", "href": "redirect", "normal-href": "reproduction" },
+            { "text": "Protection contre les prédateurs", "href": "predators" }
 		]
     },
     {
         "title": "Élevage",
         "links": [
-            { "text": "Le matériel d'élevage", "href":  "tools" },
-            { "text": "Obtenir des phasmes", "href":  "get" },
-            { "text": "Entretenir l'élevage", "href":  "daily-care" },
-            { "text": "Contrôler la population", "href":  "overcrowding" },
+            { "text": "Le matériel d'élevage", "href": "tools" },
+            { "text": "Obtenir des phasmes", "href": "get" },
+            { "text": "Entretenir l'élevage", "href": "daily-care" },
+            { "text": "Contrôler la population", "href": "overcrowding" },
 			{ "text": "Soigner ses phasmes", "href": "care" }
         ]
     },
     {
         "title": "Construire son vivarium",
         "links": [
-            { "text": "Le projet", "href":  "redirect", "normal-href": "project" },
-            { "text": "Le châssis", "href":  "redirect", "normal-href": "structure" },
-            { "text": "Les parois vitrées", "href":  "redirect", "normal-href": "glass" },
-            { "text": "La ventilation", "href":  "redirect", "normal-href": "air" },
-            { "text": "L'ouverture", "href":  "redirect", "normal-href": "door" },
-            { "text": "Les finitions", "href":  "redirect", "normal-href": "finishes" }
+            { "text": "Le projet", "href": "redirect", "normal-href": "project" },
+            { "text": "Le châssis", "href": "redirect", "normal-href": "structure" },
+            { "text": "Les parois vitrées", "href": "redirect", "normal-href": "glass" },
+            { "text": "La ventilation", "href": "redirect", "normal-href": "air" },
+            { "text": "L'ouverture", "href": "redirect", "normal-href": "door" },
+            { "text": "Les finitions", "href": "redirect", "normal-href": "finishes" }
         ]
     }
 ]
