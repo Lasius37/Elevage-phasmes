@@ -337,7 +337,7 @@ a.card:active > h3 {
 }
 
 .card {
-    flex: 0 0 calc((100% - 2 * var(--cards-gap)) / 3);
+    flex: 0 0 max(calc((100% - 2 * var(--cards-gap)) / 3), min(100%, 350px));
     overflow: hidden;
 }
 
@@ -375,6 +375,10 @@ a.card:active > h3 {
     padding: 0;
     text-align: justify;
     display: list-item;
+}
+
+[id] {
+    scroll-margin-top: calc(var(--header-height) + 1rem);  /* --header-height esst calculé en JS */
 }
 
 /* -------------------------------------------- MEDIA --------------------------------------------*/

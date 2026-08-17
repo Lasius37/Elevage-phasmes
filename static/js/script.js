@@ -168,3 +168,14 @@ document.addEventListener("DOMContentLoaded", () => {
     createMenu();
     createFooter();
 });
+
+const header = document.querySelector("header");
+
+const observer = new ResizeObserver(() => {
+    document.documentElement.style.setProperty(
+        "--header-height",
+        `${header.offsetHeight}px`
+    );
+});
+
+observer.observe(header);
