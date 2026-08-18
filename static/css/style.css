@@ -278,20 +278,20 @@ a.card:active > h3 {
     text-indent: 2rem;
 }
 
-.info .grid-content, .info .grid-content-reverse, .info .triple-grid-content {
+.info .grid-2-1, .info .grid-1-2, .info .grid-2-3-2 {
     display: grid;
 }
 
-.info .grid-content {
+.info .grid-2-1 {
     grid-template-columns: 2fr 1fr;
 }
 
-.info .grid-content-reverse {
+.info .grid-1-2 {
     grid-template-columns: 1fr 2fr;
 }
 
-.info .triple-grid-content {
-    grid-template-columns: 1fr 2fr 1fr;
+.info .grid-2-3-2 {
+    grid-template-columns: 2fr 3fr 2fr;
 }
 
 .info .text {

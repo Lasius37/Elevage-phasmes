@@ -12,7 +12,7 @@
             { "text": "Anatomie (les organes internes)", "href": "anatomy" },
             { "text": "Classification", "href": "classif" },
             { "text": "Milieu de vie et mode de vie", "href": "habitat" },
-            { "text": "Reproduction et cycle de vie", "href": "redirect", "normal-href": "reproduction" },
+            { "text": "Reproduction", "href": "reproduction" },
             { "text": "Protection contre les prédateurs", "href": "predators" }
 		]
     },
